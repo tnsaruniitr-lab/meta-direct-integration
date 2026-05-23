@@ -6,7 +6,7 @@ const { buildApp } = require('./app');
 
 const app = buildApp();
 
-const server = app.listen(config.port, () => {
+const server = app.listen(config.port, '0.0.0.0', () => {
   logger.info(
     {
       port: config.port,
